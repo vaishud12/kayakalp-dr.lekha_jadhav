@@ -156,7 +156,7 @@ Please confirm the appointment at your earliest convenience.`;
   };
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-br from-teal-50 via-white to-peach-50 pt-24 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 lg:items-stretch">
 
@@ -171,7 +171,7 @@ Please confirm the appointment at your earliest convenience.`;
               <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent" />
               
               {/* Info Card — overlays at bottom on desktop only */}
-              <div className="hidden lg:block absolute bottom-8 left-8 right-8 glass-card p-6">
+              <div className="hidden lg:block absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Why Book With Us?</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-center gap-2">
@@ -191,7 +191,7 @@ Please confirm the appointment at your earliest convenience.`;
             </div>
 
             {/* Info Card — below image on mobile only */}
-            <div className="lg:hidden mt-4 glass-card p-5">
+            <div className="lg:hidden mt-4 bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-5">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Why Book With Us?</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-center gap-2">
