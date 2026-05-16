@@ -109,7 +109,7 @@ const Header = () => {
                     key={link.path}
                     href={link.path}
                     className={`px-4 py-2 rounded-md text-sm font-medium whitespace-nowrap cursor-pointer ${
-                      (isScrolled || pathname === '/book-appointment') ? 'text-lotusGold' : 'text-lotusGold'
+                      (isScrolled || pathname === '/book-appointment') ? 'text-deepForestTeal' : 'text-white'
                     }`}
                   >
                     {link.label}
@@ -119,7 +119,7 @@ const Header = () => {
                     key={link.path}
                     onClick={() => scrollToSection(link.path)}
                     className={`px-4 py-2 rounded-md text-sm font-medium whitespace-nowrap cursor-pointer ${
-                      (isScrolled || pathname === '/book-appointment') ? 'text-lotusGold' : 'text-lotusGold'
+                      (isScrolled || pathname === '/book-appointment') ? 'text-deepForestTeal' : 'text-white'
                     }`}
                   >
                     {link.label}
@@ -132,7 +132,7 @@ const Header = () => {
             <button
               onClick={() => setIsMenuOpen((prev) => !prev)}
               className={`lg:hidden flex-shrink-0 p-2 rounded-md ${
-                (isScrolled || pathname === '/book-appointment') ? 'text-lotusGold' : 'text-lotusGold'
+                (isScrolled || pathname === '/book-appointment') ? 'text-deepForestTeal' : 'text-white'
               }`}
               aria-label="Toggle navigation menu"
               aria-expanded={isMenuOpen}

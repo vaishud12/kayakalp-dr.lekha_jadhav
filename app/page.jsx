@@ -51,7 +51,7 @@ export default function Home() {
           <div className="max-w-4xl w-full">
             
             {/* Main Heading */}
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-lotusGold leading-tight mb-2 sm:mb-3 md:mb-4 drop-shadow-2xl">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight mb-2 sm:mb-3 md:mb-4 drop-shadow-2xl" style={{ color: '#ffffff' }}>
               {"Transform Your Body skin & Confidence with Expert Care".split(' ').map((word, index) => (
                 <span
                   key={index}
