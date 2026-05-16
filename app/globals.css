@@ -1,0 +1,604 @@
+/* Import CINZEL (Headings) and GOTHAM alternative (Inter as fallback) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Gotham font - using CDN or fallback to system fonts */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), local('Avenir Next'), local('Avenir'), local('Montserrat');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #FFF4EC;
+  --foreground: #294B53;
+  --primary-teal: #36757F;
+  --lotus-gold: #E1C16E;
+  --warm-white: #FFF4EC;
+  --deep-forest-teal: #294B53;
+  --deep-charcoal: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primaryTeal: var(--primary-teal);
+  --color-lotusGold: var(--lotus-gold);
+  --color-warmWhite: var(--warm-white);
+  --color-deepForestTeal: var(--deep-forest-teal);
+  --color-deepCharcoal: var(--deep-charcoal);
+  --color-medicalTeal: var(--primary-teal);
+  --color-champagneGold: var(--lotus-gold);
+  --color-softGrey: var(--warm-white);
+  
+  /* Teal shades */
+  --color-teal-50: #f0fafa;
+  --color-teal-100: #d9f0f2;
+  --color-teal-200: #b3e1e5;
+  --color-teal-300: #8dd2d8;
+  --color-teal-400: #67c3cb;
+  --color-teal-500: #36757F;
+  --color-teal-600: #2e626a;
+  --color-teal-700: #294B53;
+  --color-teal-800: #1f383e;
+  --color-teal-900: #152529;
+  
+  /* Peach shades */
+  --color-peach-50: #fff5f0;
+  --color-peach-100: #ffe5d9;
+  --color-peach-600: #ff8c61;
+  
+  /* Font families */
+  --font-sans: 'Gotham', 'Inter', ui-sans-serif, system-ui;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-body: 'Gotham', 'Inter', ui-sans-serif, system-ui;
+  --font-cinzel: 'Cinzel', Georgia, serif;
+  --font-gotham: 'Gotham', 'Inter', ui-sans-serif, system-ui;
+  --font-geist-sans: 'Gotham', 'Inter', ui-sans-serif, system-ui;
+  --font-geist-mono: ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #294B53;
+    --foreground: #FFF4EC;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Gotham', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background);
+  color: var(--deep-charcoal);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', Georgia, serif;
+  color: var(--primary-teal);
+  font-weight: 600;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  color: var(--primary-teal);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--lotus-gold);
+}
+
+/* Smooth transitions for interactive elements */
+button {
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Image hover effects */
+img {
+  transition: transform 0.5s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-teal);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--deep-forest-teal);
+}
+
+/* Focus states for accessibility */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--primary-teal);
+  outline-offset: 2px;
+}
+
+/* Custom Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.animate-pop {
+  animation: pop 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.leaf-decoration {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Scrollbar Hide */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Glass Card Effect */
+.glass-card {
+  position: relative;
+  background: rgba(255, 244, 236, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(225, 193, 110, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(41, 75, 83, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(54, 117, 127, 0.3), transparent);
+  transition: left 0.5s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 244, 236, 0.9);
+  border: 1px solid rgba(225, 193, 110, 0.5);
+  box-shadow: 0 15px 45px 0 rgba(54, 117, 127, 0.25);
+}
+
+.glass-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(54, 117, 127, 0.1) 0%,
+    rgba(41, 75, 83, 0.05) 50%,
+    rgba(225, 193, 110, 0.1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 1rem;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glass-card:hover .glass-effect {
+  opacity: 1;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Animated Loader Background */
+.animated-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.group:hover .animated-loader {
+  opacity: 1;
+}
+
+.animated-loader::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, var(--clr) 0%, transparent 70%);
+  animation: animateLoader 2s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animated-loader::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(360deg);
+  }
+}
+
+@keyframes animateLoader {
+  0% {
+    transform: translate(-75%, -75%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-25%, -75%) rotate(90deg);
+  }
+  50% {
+    transform: translate(-25%, -25%) rotate(180deg);
+  }
+  75% {
+    transform: translate(-75%, -25%) rotate(270deg);
+  }
+  100% {
+    transform: translate(-75%, -75%) rotate(360deg);
+  }
+}
+
+/* Achievement Badge Glow */
+.achievement-badge-glow {
+  box-shadow: 
+    0 0 20px rgba(54, 117, 127, 0.3),
+    0 0 40px rgba(54, 117, 127, 0.2),
+    0 0 60px rgba(54, 117, 127, 0.1);
+}
+
+@keyframes leafSway {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+}
+
+/* Celebration Effects */
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.celebration-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Testimonial Carousel */
+@keyframes testimonialScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-384px * 6 - 2rem * 6));
+  }
+}
+
+.testimonial-carousel-track {
+  animation: testimonialScroll 40s linear infinite;
+  will-change: transform;
+}
+
+.testimonial-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+/* Glass Card for Appointment Form */
+.glass-card-appointment {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(225, 193, 110, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: 
+    0 8px 32px 0 rgba(54, 117, 127, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-appointment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #36757F, #294B53, #36757F);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.glass-card-appointment:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 
+    0 15px 45px 0 rgba(54, 117, 127, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  transform: translateY(-4px);
+}
+
+/* Hero Video */
+.hero-video {
+  filter: brightness(0.8);
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive Video Styling */
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Mobile (Portrait) */
+@media (max-width: 640px) {
+  .hero-video {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Mobile (Landscape) */
+@media (max-width: 640px) and (orientation: landscape) {
+  .hero-video {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Tablet (Portrait) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .hero-video {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+/* Tablet (Landscape) and Small Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-video {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .hero-video {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 375px) {
+  .hero-video {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+/* Snap Scroll */
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Disable text selection styling */
+::selection {
+  background-color: transparent;
+  color: inherit;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: inherit;
+}
