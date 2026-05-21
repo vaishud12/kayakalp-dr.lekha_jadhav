@@ -57,7 +57,7 @@ export default function AvailPrograms({ id }) {
                 OUR PLANS
             </h2>
             <p className="text-lg text-gray-600 animate-fade-in-up">
-                Tailored weight loss by our expert team: MD Internal medicine Gynecologist skin and hair specialist and family physician/ nutritionist
+                Tailored weight loss by our expert team: MD Internal Medicine, Gynecologist, Skin and Hair Specialist, and Ayurvedic Consultant/Nutritionist
             </p>
           </div>
 
