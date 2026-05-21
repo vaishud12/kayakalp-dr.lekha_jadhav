@@ -38,15 +38,21 @@ export default function TestimonialsSection({ testimonials }) {
   return (
     <section 
       ref={testimonialsRef}
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden"
     >
-      <div className="container mx-auto">
+      {/* Teal shadow — top left */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl shadow-[0_0_100px_rgba(20,184,166,0.3)]"></div>
+      
+      {/* Teal shadow — bottom right */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl shadow-[0_0_100px_rgba(20,184,166,0.3)]"></div>
+      
+      <div className="container mx-auto relative z-10">
         <div className={`text-center max-w-2xl mx-auto mb-16 transition-all duration-1000 ease-out ${
           isTestimonialsVisible 
             ? 'opacity-100 scale-100' 
             : 'opacity-0 scale-90'
         }`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Patient Success Stories
           </h2>
           <p className="text-lg text-gray-600">

@@ -38,9 +38,10 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { path: 'services', label: 'Services' },
-    { path: 'about', label: 'About Us' },
-    { path: 'contact', label: 'Contact' },
+    { path: 'Roadmap', label: 'Roadmap' },
+    { path: 'Plans', label: 'Plans' },
+    { path: 'Doctor Panel', label: 'Doctor Panel' },
+    { path: 'Other Services', label: 'Other Services' },
     { path: '/book-appointment', label: 'Book Appointment' },
   ];
 

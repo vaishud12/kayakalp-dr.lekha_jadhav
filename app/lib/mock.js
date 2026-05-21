@@ -26,88 +26,90 @@ export const doctorInfo = {
 export const services = [
   {
     id: 1,
-    category: "weight-management",
-    title: "Medical Weight Loss",
-    shortDesc: "Doctor-supervised weight loss programs tailored to your body's unique needs",
-    icon: "Scale",
-    image: "/Images/What-is-Medical-Weight-Loss.jpeg",
+    category: "Hair Restoration & Growth",
+    title: "Hair Restoration & Growth",
+    shortDesc: "Advanced follicular solutions for thicker, healthier hair",
+    icon: "Sparkles",
+    image: "/Images/hairrestoration.png",
     features: [
-      "Personalized diet & nutrition plans",
-      "Medical evaluation & monitoring",
-      "Lifestyle modification guidance",
-      "Sustainable weight loss strategies"
+      "PRP therapy for hair loss",
+      "Scalp rejuvenation treatments",
+      "Thinning hair management",
+      "Customized hair care plans"
     ]
   },
   {
     id: 2,
-    category: "weight-management",
-    title: "Obesity & Lifestyle Disorders",
-    shortDesc: "Comprehensive management of obesity-related health conditions",
-    icon: "Activity",
-    image: "/Images/photo-1467453678174-768ec283a940.jpg",
+    category: "body-contouring",
+    title: "Body Contouring & Sculpting",
+    shortDesc: "Non-invasive solutions for a toned and refined silhouette",
+    icon: "Sparkle",
+    image: "/Images/bodycontouring.jpg",
     features: [
-      "Diabetes & hypertension management",
-      "Thyroid disorder treatment",
-      "Metabolic syndrome care",
-      "Regular health monitoring"
+      "Targeted fat reduction",
+      "Body skin tightening",
+      "Cellulite reduction therapies",
+      "Personalized body transformation goals"
     ]
   },
   {
     id: 3,
-    category: "weight-management",
-    title: "PCOS Weight Management",
-    shortDesc: "Specialized treatment for PCOS-related weight and hormonal issues",
-    icon: "Heart",
-    image: "/Images/PCOS-Weight-Loss-Diet-3.png",
+    category: "Sensitive Skin & Rosacea Care",
+    title: "Sensitive Skin & Rosacea Care",
+    shortDesc: "Gentle, professional management for reactive skin types",
+    icon: "Star",
+    image: "/Images/sensativeskin.jpeg",
     features: [
-      "Hormonal balance restoration",
-      "Customized nutrition plans",
-      "Lifestyle modifications",
-      "Medical supervision & support"
+      "Calming redness reduction therapies",
+      "Barrier repair protocols",
+      "Soothing professional facials",
+      "Sensitive skin product consultations"
     ]
   },
   {
     id: 4,
-    category: "skin-care",
-    title: "Acne & Pigmentation Treatment",
-    shortDesc: "Advanced medical solutions for clear, radiant skin",
-    icon: "Sparkles",
-    image: "/Images/pexels-photo-7446690.jpeg",
+    category: "Laser Hair Removal",
+    title: "Laser Hair Removal",
+    shortDesc: "Effective, long-term reduction for smooth, worry-free skin",
+    icon: "Star",
+    image: "/Images/laserhair.jpg",
     features: [
-      "Medical-grade acne treatment",
-      "Pigmentation & dark spot removal",
-      "Scar reduction therapies",
-      "Customized skin care regimens"
+      "Full-body hair reduction",
+      "Fast and gentle laser technology",
+      "Safe for various skin tones",
+      "Reduced ingrown hair concerns"
     ]
   },
   {
     id: 5,
-    category: "skin-care",
-    title: "Anti-Aging & Skin Rejuvenation",
-    shortDesc: "Non-surgical aesthetic procedures for youthful, glowing skin",
-    icon: "Sparkle",
-    image: "/Images/pexels-photo-4586713.jpeg",
+    category: "Pore Refinement & Texture",
+    title: "Pore Refinement & Texture",
+    shortDesc: "Deep cleansing and surface-smoothing dermatological care",
+    icon: "Star",
+    image: "/Images/pore.jpeg",
     features: [
-      "Chemical peels & facials",
-      "Skin tightening treatments",
-      "Fine line & wrinkle reduction",
-      "Collagen stimulation therapy"
+      "Deep-pore cleansing treatments",
+      "Refining skin surface texture",
+      "Blackhead and congestion removal",
+      "Advanced extraction techniques"
     ]
   },
   {
     id: 6,
-    category: "skin-care",
-    title: "Advanced Skin Treatments",
-    shortDesc: "State-of-the-art dermatological procedures for various skin concerns",
+    category: "Bridal & Event Glow",
+    title: "Bridal & Event Glow",
+    shortDesc: "Pre-event treatments for radiant, picture-perfect results",
     icon: "Star",
-    image: "/Images/Oxyjet-Treatment.jpg.webp",
+    image: "/Images/bridal.png",
     features: [
-      "Laser treatments",
-      "Skin texture improvement",
-      "Melasma & sun damage repair",
-      "Customized treatment plans"
+      "Radiance-boosting chemical peels",
+      "Instant hydration therapy",
+      "De-puffing and brightening treatments",
+      "Tailored \"Event-Ready\" packages"
     ]
-  }
+  },
+
+  
 ];
 
 export const whyChooseUs = [
@@ -200,6 +202,45 @@ export const testimonials = [
   }
 ];
 
+export const timeline = [
+  {
+    id: 1,
+    title: "Book a Screening Call",
+    description: "​Schedule a brief initial call to discuss your health goals and see if our programs are the right fit for you.",
+    icon: "Calendar",
+    color: "teal"
+  },
+  {
+    id: 2,
+    title: "Eligibility & Lab Setup",
+    description: "​During our call, we’ll check your eligibility. If it’s a match, we will guide you on the specific blood tests needed to move forward.",
+    icon: "FlaskConical",
+    color: "blue"
+  },
+  {
+    id: 3,
+    title: "Medical Review & Enrollment",
+    description: "​Once we receive your blood reports, our team reviews them. We will then open enrollment for the specific program that matches your biomarkers.",
+    icon: "ClipboardCheck",
+    color: "emerald"
+  },
+  {
+    id: 4,
+    title: "Physician Consultation",
+    description: "Meet with our Head of Internal Medicine. They will review your clinical data to determine your precise medical protocol and personalized dosage for the month.",
+    icon: "Stethoscope",
+    color: "purple"
+  },
+  {
+    id: 5,
+    title: "Program Launch",
+    description: "​With your medical plan finalized, your official program begins. You will step directly into active care with our dedicated team.",
+    icon: "Rocket",
+    color: "amber"
+  }
+];
+
+
 export const faqs = {
   weightManagement: [
     {
@@ -246,7 +287,7 @@ export const faqs = {
 export const stats = [
   { number: "300+", label: "Happy Patients" },
   { number: "5+", label: "Years Experience" },
-  { number: "20+", label: "Treatment Options" },
+  { number: "25+", label: "Treatment Options" },
   { number: "20+", label: "Serving states" }
 ];
 

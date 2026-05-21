@@ -156,22 +156,28 @@ Please confirm the appointment at your earliest convenience.`;
   };
 
   return (
-    <div className="bg-gradient-to-br from-teal-50 via-white to-peach-50 pt-24 pb-12 px-4 sm:px-6 lg:px-8">
-      <div className="w-full mx-auto">
+    <div className="relative bg-gradient-to-br from-teal-50 via-white to-peach-50 pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Teal shadow — top left */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl shadow-[0_0_100px_rgba(20,184,166,0.3)]"></div>
+      
+      {/* Teal shadow — bottom right */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl shadow-[0_0_100px_rgba(20,184,166,0.3)]"></div>
+      
+      <div className="w-full mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 lg:items-stretch">
 
           {/* Image — visible on ALL screens */}
-          <div className="w-full flex flex-col">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl flex-1 min-h-[300px]">
+          <div className="w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl lg:h-full">
               <img
-                src="/Images/pngtree-doctor-appointment-vector-image_2242695.jpg"
+                src="/Images/bookappoinment.png"
                 alt="Medical Consultation"
-                className="w-full h-full object-cover"
+                className="w-full h-auto lg:absolute lg:inset-0 lg:h-full lg:object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent" />
               
               {/* Info Card — overlays at bottom on desktop only */}
-              <div className="hidden lg:block absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-6">
+              {/* <div className="hidden lg:block absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Why Book With Us?</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-center gap-2">
@@ -187,11 +193,11 @@ Please confirm the appointment at your earliest convenience.`;
                     Flexible appointment scheduling
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
             {/* Info Card — below image on mobile only */}
-            <div className="lg:hidden mt-4 bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-5">
+            {/* <div className="lg:hidden mt-4 bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-5">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Why Book With Us?</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-center gap-2">
@@ -207,12 +213,37 @@ Please confirm the appointment at your earliest convenience.`;
                   Flexible appointment scheduling
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           {/* Form */}
           <div className="relative w-full">
-            <div className="glass-card-appointment p-6 sm:p-8 md:p-10">
+            <div className="glass-card-appointment p-8 sm:p-10 md:p-12 relative">
+              {/* Teal shadow — top right */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-teal-400/25 to-cyan-400/25 rounded-full blur-3xl shadow-[0_0_80px_rgba(20,184,166,0.35)] pointer-events-none z-0"></div>
+              
+              {/* Teal shadow — bottom left */}
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-teal-400/25 to-cyan-400/25 rounded-full blur-3xl shadow-[0_0_80px_rgba(20,184,166,0.35)] pointer-events-none z-0"></div>
+              
+              {/* Decorative SVG curves — top right */}
+              <div className="absolute top-0 right-0 w-40 sm:w-48 lg:w-56 h-40 sm:h-48 lg:h-56 pointer-events-none opacity-40 z-0">
+                <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M280 0 C180 50, 210 140, 280 190" stroke="#14B8A6" strokeWidth="3" />
+                  <path d="M280 40 C160 80, 190 180, 280 240" stroke="#14B8A6" strokeWidth="3" />
+                  <path d="M280 80 C140 110, 170 220, 280 280" stroke="#14B8A6" strokeWidth="3" />
+                </svg>
+              </div>
+              
+              {/* Decorative SVG curves — bottom left */}
+              <div className="absolute bottom-0 left-0 w-40 sm:w-48 lg:w-56 h-40 sm:h-48 lg:h-56 pointer-events-none opacity-40 rotate-180 z-0">
+                <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M280 0 C180 50, 210 140, 280 190" stroke="#14B8A6" strokeWidth="3" />
+                  <path d="M280 40 C160 80, 190 180, 280 240" stroke="#14B8A6" strokeWidth="3" />
+                  <path d="M280 80 C140 110, 170 220, 280 280" stroke="#14B8A6" strokeWidth="3" />
+                </svg>
+              </div>
+              
+              <div className="relative z-10">
               {/* Success Overlay */}
               {isSubmitted && (
                 <div className="absolute inset-0 bg-white/95 backdrop-blur-md rounded-3xl flex items-center justify-center z-50 animate-fade-in">
@@ -229,10 +260,10 @@ Please confirm the appointment at your earliest convenience.`;
                 </div>
               )}
 
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">Book an Appointment</h1>
-              <p className="text-gray-600 mb-8">Schedule your consultation with Dr. Lekha Jadhav</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Book an Appointment</h1>
+              <p className="text-gray-600 mb-10">Schedule your consultation with Dr. Lekha Jadhav</p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-7">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
                   <input
@@ -349,6 +380,7 @@ Please confirm the appointment at your earliest convenience.`;
                   )}
                 </button>
               </form>
+              </div>
             </div>
           </div>
 

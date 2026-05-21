@@ -38,13 +38,16 @@ const Footer = () => {
                 <Link href="/" className="text-sm hover:text-teal-400 transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/#services" className="text-sm hover:text-teal-400 transition-colors">Services</Link>
+                <Link href="/#Roadmap" className="text-sm hover:text-teal-400 transition-colors">Roadmap</Link>
               </li>
               <li>
-                <Link href="/#about" className="text-sm hover:text-teal-400 transition-colors">About Us</Link>
+                <Link href="/#Plans" className="text-sm hover:text-teal-400 transition-colors">Plans</Link>
               </li>
               <li>
-                <Link href="/#contact" className="text-sm hover:text-teal-400 transition-colors">Contact</Link>
+                <Link href="/#Doctor Panel" className="text-sm hover:text-teal-400 transition-colors">Doctor Panel</Link>
+              </li>
+              <li>
+                <Link href="/#Other Service" className="text-sm hover:text-teal-400 transition-colors">Other Service</Link>
               </li>
               <li>
                 <Link href="/book-appointment" className="text-sm hover:text-teal-400 transition-colors">Book Appointment</Link>
