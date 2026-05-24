@@ -14,6 +14,7 @@ import HashNavigator from './components/HashNavigator';
 import OurDoctors from './components/OurDoctors';
 import Timeline from './components/Timeline';
 import AvailPrograms from './components/AvailPrograms';
+import HealthPriorityBanner from './components/HealthPriorityBanner';
 
 const getIcon = (iconName) => {
   const icons = {
@@ -83,8 +84,16 @@ You’re never treated like just another case. Our team of 4 doctors takes the t
         </div>
       </section>
 
+      {/* Clinical Integrity Section */}
       {/* Stats Section */}
       <StatsSection stats={stats} />
+
+       <HealthPriorityBanner 
+        id="Clinical Integrity"
+        imageSrc="/Images/priority3-removebg-preview-removebg-preview.png"
+        bgColor="bg-teal-500"
+      />
+
 
       {/* Timeline Section */}
       <Timeline id="Roadmap"/>

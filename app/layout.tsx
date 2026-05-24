@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kayakalp – Dr. Lekha Jadhav | Weight Management & Skin Care Clinic",
     description: "Transform your health with medicated weight loss, metabolic health & insulin resistance treatment. Expert skin care, laser hair removal, body contouring & wellness programs in Kharadi, Pune.",
-    url: "https://kayakalpbydrlekha.com", // replace with actual domain
+    url: "https://www.kayakalpbydrlekha.com", // replace with actual domain
     siteName: "Kayakalp - Dr. Lekha Jadhav",
     images: [
       {
@@ -95,8 +95,9 @@ export const metadata: Metadata = {
     icon: '/logo.jpg',
     apple: '/logo.jpg',
   },
+  manifest: '/manifest.json',
   alternates: {
-    canonical: 'https://kayakalpbydrlekha.com', // replace with actual domain
+    canonical: 'https://www.kayakalpbydrlekha.com', // replace with actual domain
   },
 };
 
@@ -110,13 +111,13 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "MedicalClinic",
-        "@id": "https://kayakalpbydrlekha.com",
+        "@id": "https://www.kayakalpbydrlekha.com",
         "name": "KayaKalp - Dr. Lekha Jadhav",
         "alternateName": "Dr. Lekha Jadhav Clinic",
-        "url": "https://kayakalpbydrlekha.com",
+        "url": "https://www.kayakalpbydrlekha.com",
         "telephone": "+91-76663-20828",
         "email": "kayakalp.drlekha@gmail.com",
-        "image": "https://kayakalpbydrlekha.com",
+        "image": "https://www.kayakalpbydrlekha.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Shraddha Hospital, Survey No 43, Parashar Society, Pune Nagar Rd, Ashoka Nagar",
@@ -192,11 +193,11 @@ export default function RootLayout({
       },
       {
         "@type": "Physician",
-        "@id": "https://kayakalpbydrlekha.com/#Doctor%20Panel",
+        "@id": "https://www.kayakalpbydrlekha.com/#Doctor%20Panel",
         "name": "Dr. Lekha Jadhav",
         "jobTitle": "Dermatologist & Weight Management Specialist",
         "worksFor": {
-          "@id": "https://kayakalpbydrlekha.com"
+          "@id": "https://www.kayakalpbydrlekha.com"
         },
         "medicalSpecialty": ["Dermatology", "Weight Management", "Aesthetic Medicine"],
         "alumniOf": "MBBS, MD (Dermatology)",
@@ -204,12 +205,12 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://kayakalpbydrlekha.com",
-        "url": "https://kayakalpbydrlekha.com",
+        "@id": "https://www.kayakalpbydrlekha.com",
+        "url": "https://www.kayakalpbydrlekha.com",
         "name": "Kayakalp - Dr. Lekha Jadhav",
         "description": "Weight Management & Skin Care Clinic in Kharadi, Pune",
         "publisher": {
-          "@id": "https://kayakalpbydrlekha.com"
+          "@id": "https://www.kayakalpbydrlekha.com"
         }
       }
     ]

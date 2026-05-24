@@ -17,7 +17,7 @@ const doctors = [
     specialty: "MBBS, FAM, PGDCC",
     tagline: "Founder and Medical Director of KayaKalp",
     bio: "Dr. Lekha Jadhav leads and personalizes the GLP-1 transformation programs at KayaKalp by combining medical guidance with continuous patient support. She helps patients navigate their weight loss journey through customized treatment planning, lifestyle correction, progress monitoring, and management of skin, hair, and wellness concerns that can arise during rapid weight loss. Her approach focuses on achieving sustainable results under proper medical supervision.",
-    image: "/Images/dr_lekha_jadhav.jpg",
+    image: "/Images/priority.jpg",
   },
   {
     id: 3,

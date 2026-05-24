@@ -1,0 +1,24 @@
+{
+  "name": "KayaKalp - Dr. Lekha Jadhav | Weight Management & Skin Care Clinic",
+  "short_name": "KayaKalp Clinic",
+  "description": "Leading weight loss and skin care clinic in Kharadi, Pune offering medicated weight management, metabolic health, and advanced dermatology.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#14B8A6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
