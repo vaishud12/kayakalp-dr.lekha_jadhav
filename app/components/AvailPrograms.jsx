@@ -149,7 +149,7 @@ export default function AvailPrograms({ id }) {
                   </div>
 
                   <button
-                    onClick={() => window.open('https://forms.gle/CxMbYCzDyp9GxULB6', '_blank', 'noopener,noreferrer')}
+                    onClick={() => window.open('https://forms.gle/KFwguS13cwEbrSFn8', '_blank', 'noopener,noreferrer')}
                     className="
                       bg-gradient-to-r from-teal-500 to-teal-600 
                       hover:from-teal-600 hover:to-teal-700 
@@ -158,6 +158,7 @@ export default function AvailPrograms({ id }) {
                       px-6 sm:px-8 py-2 sm:py-2.5 rounded-full
                       transition-all duration-300
                       shadow-lg hover:shadow-xl
+                      cursor-pointer
                     "
                   >
                     Request a consultation

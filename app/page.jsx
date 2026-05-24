@@ -267,7 +267,7 @@ You’re never treated like just another case. Our team of 4 doctors takes the t
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book-appointment">
-                <Button size="lg" className="bg-teal-600 text-white hover:bg-yellow-600 gap-2 group">
+                <Button size="lg" className="bg-teal-600 text-white hover:bg-yellow-600 gap-2 group cursor-pointer">
                   Book Appointment Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -277,7 +277,7 @@ You’re never treated like just another case. Our team of 4 doctors takes the t
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="bg-teal-600 text-white hover:bg-yellow-600 border-2 border-white gap-2">
+                <Button size="lg" className="bg-teal-600 text-white hover:bg-yellow-600 border-2 border-white gap-2 cursor-pointer">
                   Chat on WhatsApp
                 </Button>
               </a>
