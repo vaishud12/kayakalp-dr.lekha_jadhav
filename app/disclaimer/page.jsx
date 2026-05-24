@@ -186,21 +186,21 @@ const MedicalDisclaimer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-8 shadow-md border border-teal-200">
+        <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-8 shadow-md border border-teal-200 relative z-20">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Have Medical Questions?</h3>
           <p className="text-gray-700 mb-4">
             For personalized medical advice and treatment recommendations, please schedule a consultation with our doctor.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="tel:+919876543210"
-              className="inline-block bg-teal-600 !text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors text-center font-semibold shadow-md"
+           <a
+              href="tel:+91766320828"
+              className="inline-block bg-teal-600 !text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors text-center font-semibold shadow-md cursor-pointer"
             >
-              Call Us Now
+              Call Us
             </a>
             <a
-              href="mailto:contact@drlekhajadhav.com"
-              className="inline-block bg-white text-teal-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors text-center font-semibold shadow-md border border-teal-600"
+              href="mailto:kayakalp.drlekha@gmail.com"
+              className="inline-block bg-white text-teal-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors text-center font-semibold shadow-md border border-teal-600 cursor-pointer"
             >
               Email Us
             </a>

@@ -5,19 +5,19 @@ import Image from "next/image";
 const doctors = [
   {
     id: 1,
-    name: "DR. NINAD BHOSALE",
-    specialty: "MBBS, M.D. (Medicine), I.D.C.C.M",
-    tagline: "Panel Consultant – Internal Medicine & Critical Care",
-    bio: "Dr. Ninad Bhosale provides expert medical supervision for GLP-1 based weight management programs. With his background in internal medicine, diabetology, and critical care, he helps monitor metabolic health, manage medication safety, and ensure patients achieve sustainable weight loss with proper clinical oversight.",
-    image: "/Images/dr_ninand_bhosale.jpg",
-  },
-  {
-    id: 2,
     name: "DR. LEKHA JADHAV",
     specialty: "MBBS, FAM, PGDCC",
     tagline: "Founder and Medical Director of KayaKalp",
     bio: "Dr. Lekha Jadhav leads and personalizes the GLP-1 transformation programs at KayaKalp by combining medical guidance with continuous patient support. She helps patients navigate their weight loss journey through customized treatment planning, lifestyle correction, progress monitoring, and management of skin, hair, and wellness concerns that can arise during rapid weight loss. Her approach focuses on achieving sustainable results under proper medical supervision.",
     image: "/Images/priority.jpg",
+  },
+  {
+    id: 2,
+    name: "DR. NINAD BHOSALE",
+    specialty: "MBBS, M.D. (Medicine), I.D.C.C.M",
+    tagline: "Panel Consultant – Internal Medicine & Critical Care",
+    bio: "Dr. Ninad Bhosale provides expert medical supervision for GLP-1 based weight management programs. With his background in internal medicine, diabetology, and critical care, he helps monitor metabolic health, manage medication safety, and ensure patients achieve sustainable weight loss with proper clinical oversight.",
+    image: "/Images/dr_ninand_bhosale.jpg",
   },
   {
     id: 3,

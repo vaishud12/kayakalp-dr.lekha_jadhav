@@ -76,21 +76,21 @@ const PrivacyPolicy = () => {
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         {/* Teal shadow — top left */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl shadow-[0_0_100px_rgba(20,184,166,0.3)]"></div>
-        
+
         {/* Teal shadow — bottom right */}
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl shadow-[0_0_100px_rgba(20,184,166,0.3)]"></div>
-        
+
         {/* Decorative corner circles */}
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-gradient-to-br from-teal-400 to-cyan-400 rounded-full opacity-20 blur-3xl"></div>
         <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-gradient-to-tl from-teal-500 to-emerald-400 rounded-full opacity-20 blur-3xl"></div>
         <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-teal-300 rounded-full opacity-10 blur-2xl"></div>
       </div>
-      
+
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none z-0" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2314b8a6' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
       }}></div>
-      
+
       {/* Header */}
       <div className="bg-gradient-to-r from-teal-600 to-teal-700 text-white relative shadow-2xl">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-500/30 via-transparent to-amber-500/20"></div>
@@ -113,7 +113,7 @@ const PrivacyPolicy = () => {
             <path d="M320 100 C180 140, 230 240, 320 310" stroke="#14B8A6" strokeWidth="4" />
           </svg>
         </div>
-        
+
         {/* Decorative SVG curves — bottom left of cards section */}
         <div className="absolute bottom-20 left-0 w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 opacity-30 rotate-180 z-0">
           <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
             <path d="M320 100 C180 140, 230 240, 320 310" stroke="#14B8A6" strokeWidth="4" />
           </svg>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {sections.map((section, index) => (
             <div
@@ -132,7 +132,7 @@ const PrivacyPolicy = () => {
             >
               {/* Diagonal gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 via-transparent to-teal-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform -skew-y-3"></div>
-              
+
               <div className="flex items-center gap-3 mb-4 relative z-10">
                 <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center text-white shadow-md">
                   {section.icon}
@@ -152,21 +152,21 @@ const PrivacyPolicy = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-8 shadow-md border border-teal-200">
+        <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-8 shadow-md border border-teal-200 relative z-20">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Questions About Privacy?</h3>
           <p className="text-gray-700 mb-4">
             If you have any questions or concerns about our privacy practices, please don&apos;t hesitate to contact us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+919876543210"
-              className="inline-block bg-teal-600 !text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors text-center font-semibold shadow-md"
+              href="tel:+91766320828"
+              className="inline-block bg-teal-600 !text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors text-center font-semibold shadow-md cursor-pointer"
             >
               Call Us
             </a>
             <a
-              href="mailto:contact@drlekhajadhav.com"
-              className="inline-block bg-white text-teal-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors text-center font-semibold shadow-md border border-teal-600"
+              href="mailto:kayakalp.drlekha@gmail.com"
+              className="inline-block bg-white text-teal-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors text-center font-semibold shadow-md border border-teal-600 cursor-pointer"
             >
               Email Us
             </a>

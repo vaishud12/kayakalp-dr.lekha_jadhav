@@ -110,7 +110,7 @@ const TermsOfService = () => {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         {/* Decorative SVG curves — top right of cards section */}
-        <div className="absolute top-0 right-0 w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 opacity-30 z-0">
+        <div className="absolute top-0 right-0 w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 opacity-30 z-0 pointer-events-none">
           <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M320 0 C220 60, 270 160, 320 210" stroke="#14B8A6" strokeWidth="4" />
             <path d="M320 50 C200 100, 250 200, 320 260" stroke="#14B8A6" strokeWidth="4" />
@@ -119,7 +119,7 @@ const TermsOfService = () => {
         </div>
         
         {/* Decorative SVG curves — bottom left of cards section */}
-        <div className="absolute bottom-20 left-0 w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 opacity-30 rotate-180 z-0">
+        <div className="absolute bottom-20 left-0 w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 opacity-30 rotate-180 z-0 pointer-events-none">
           <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M320 0 C220 60, 270 160, 320 210" stroke="#14B8A6" strokeWidth="4" />
             <path d="M320 50 C200 100, 250 200, 320 260" stroke="#14B8A6" strokeWidth="4" />
@@ -171,21 +171,21 @@ const TermsOfService = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-8 shadow-md border border-teal-200">
+        <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-8 shadow-md border border-teal-200 relative z-20">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Questions About Our Terms?</h3>
           <p className="text-gray-700 mb-4">
             If you have any questions regarding our terms of service, please contact us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+919876543210"
-              className="inline-block bg-teal-600 !text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors text-center font-semibold shadow-md"
+              href="tel:+91766320828"
+              className="inline-block bg-teal-600 !text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors text-center font-semibold shadow-md cursor-pointer"
             >
               Call Us
             </a>
             <a
-              href="mailto:contact@drlekhajadhav.com"
-              className="inline-block bg-white text-teal-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors text-center font-semibold shadow-md border border-teal-600"
+              href="mailto:kayakalp.drlekha@gmail.com"
+              className="inline-block bg-white text-teal-600 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors text-center font-semibold shadow-md border border-teal-600 cursor-pointer"
             >
               Email Us
             </a>
