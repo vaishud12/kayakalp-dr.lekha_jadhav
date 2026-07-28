@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     "skin specialist Pune",
     "Dr. Ninad Bhosale",
     "Dr. Sanjiv Jadhav",
+    "Panchamrut Lifecare LLP",
     "Dr. Shraddha Jadhav",
     "medical weight management",
     "chemical peels Pune",

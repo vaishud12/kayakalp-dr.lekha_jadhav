@@ -106,7 +106,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Dr. Lekha Jadhav. All rights reserved.
+              © {new Date().getFullYear()} Dr. Lekha Jadhav. All rights reserved.<br/>Kayakalp is a registered brand operating under Panchamrut Lifecare LLP.
               <span className="block text-xs">Copyright © {new Date().getFullYear()} Vaishnavi Devardekar. Unauthorized use is prohibited.</span>
             </p>
             <div className="flex gap-6 text-sm">
