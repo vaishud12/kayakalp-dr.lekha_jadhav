@@ -247,7 +247,7 @@ export default function HealthPriorityBanner({
                     onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeoPP6akHMBZy1_Jk9rCGW6-L6VSQ-6sPwbol2eVRhWmVDIlA/viewform?usp=header', '_blank')}
                     className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-5 md:px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-xs md:text-sm flex items-center justify-center cursor-pointer"
                   >
-                    CHECK ELIGIBILITY AT JUST ₹400 ONLY
+                    CHECK ELIGIBILITY AT JUST ₹500 ONLY
                   </button>
                   
                 </div>
