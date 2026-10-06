@@ -2,7 +2,40 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
-import { MessageCircle, X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight } from 'lucide-react';
+
+// Cute cartoon chat-bubble buddy used as the chatbot icon
+function KayaCartoon({ className = 'w-6 h-6' }) {
+  return (
+    <svg viewBox="0 0 64 64" className={className} fill="none" aria-hidden="true">
+      {/* Chat bubble body */}
+      <path
+        d="M14 6h36c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12H30L16 58V46h-2c-6.6 0-12-5.4-12-12V18C2 11.4 7.4 6 14 6z"
+        fill="#ffffff"
+        stroke="#0f766e"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      {/* Eyes */}
+      <circle cx="23" cy="25" r="5" fill="#134e4a" />
+      <circle cx="43" cy="25" r="5" fill="#134e4a" />
+      <circle cx="25" cy="23" r="1.6" fill="#ffffff" />
+      <circle cx="45" cy="23" r="1.6" fill="#ffffff" />
+      {/* Smile */}
+      <path
+        d="M24 34c2.8 4 6.2 6 9 6s6.2-2 9-6"
+        stroke="#134e4a"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+      {/* Rosy cheeks */}
+      <circle cx="14" cy="32" r="3.2" fill="#f9a8d4" opacity="0.7" />
+      <circle cx="52" cy="32" r="3.2" fill="#f9a8d4" opacity="0.7" />
+      {/* Sparkle */}
+      <path d="M56 8l1.4 3.1L60.5 12.5l-3.1 1.4L56 17l-1.4-3.1L51.5 12.5l3.1-1.4L56 8z" fill="#fbbf24" />
+    </svg>
+  );
+}
 
 // Structured bot answers — each answer is intro / heading + bullet lines (never one long paragraph)
 const chatAnswers = {
@@ -547,7 +580,7 @@ function Chatbot() {
           className="w-14 h-14 bg-teal-600 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-teal-700 transition-all duration-300"
           aria-label="Open chatbot"
         >
-          <MessageCircle className="w-6 h-6" />
+          <KayaCartoon className="w-8 h-8" />
         </button>
       )}
 
@@ -557,8 +590,8 @@ function Chatbot() {
           {/* Header */}
           <div className="flex items-center justify-between p-4 bg-teal-50 border-b border-teal-200 flex-shrink-0">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center">
-                <MessageCircle className="w-4 h-4 text-teal-600" />
+              <div className="w-9 h-9 bg-teal-100 rounded-full flex items-center justify-center">
+                <KayaCartoon className="w-7 h-7" />
               </div>
               <div>
                 <h3 className="font-semibold text-teal-800">Kaya</h3>
