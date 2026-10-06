@@ -139,7 +139,7 @@ export default function HealthPriorityBanner({
                   onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeoPP6akHMBZy1_Jk9rCGW6-L6VSQ-6sPwbol2eVRhWmVDIlA/viewform?usp=header', '_blank')}
                   className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-lg text-xs w-full cursor-pointer"
                 >
-                  CHECK ELIGIBILITY AT JUST ₹400 ONLY
+                  CHECK ELIGIBILITY AT JUST ₹500 ONLY
                 </button>
                 
                 {/* Facilities Grid */}
