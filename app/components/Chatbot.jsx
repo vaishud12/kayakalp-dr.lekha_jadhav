@@ -455,16 +455,16 @@ function BotAnswer({ answer, followUps, onSelect, disabled }) {
 
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState(() => [{
+    id: Date.now() + Math.random(),
+    sender: 'bot',
+    answer: chatAnswers.greeting,
+    followUps: getFollowUps('greeting'),
+  }]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
   const chatContainerRef = useRef(null);
-
-  // Add initial greeting message
-  useEffect(() => {
-    addBotMessage('greeting');
-  }, []);
 
   // Scroll to bottom when messages update
   useEffect(() => {
@@ -571,6 +571,23 @@ function Chatbot() {
         .quick-scroll::-webkit-scrollbar {
           display: none;
         }
+        .chat-window {
+          width: calc(100vw - 2rem);
+          max-height: calc(100vh - 6rem);
+          max-height: calc(100dvh - 6rem);
+        }
+        @media (min-width: 640px) {
+          .chat-window {
+            width: 24rem;
+            max-height: 85vh;
+            max-height: 85dvh;
+          }
+        }
+        @media (min-width: 768px) {
+          .chat-window {
+            width: 26rem;
+          }
+        }
       `}</style>
 
       {/* Chatbot Toggle Button — hidden while the chat window is open */}
@@ -586,9 +603,9 @@ function Chatbot() {
 
       {/* Chatbot Window */}
       {isOpen && (
-        <div className="w-96 max-h-[85vh] bg-white rounded-2xl shadow-2xl flex flex-col border border-teal-200 overflow-hidden">
+        <div className="chat-window bg-white rounded-2xl shadow-2xl flex flex-col border border-teal-200 overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 bg-teal-50 border-b border-teal-200 flex-shrink-0">
+          <div className="flex items-center justify-between p-3 sm:p-4 bg-teal-50 border-b border-teal-200 flex-shrink-0">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 bg-teal-100 rounded-full flex items-center justify-center">
                 <KayaCartoon className="w-7 h-7" />
@@ -608,7 +625,7 @@ function Chatbot() {
           </div>
 
           {/* Messages - scrollable container */}
-          <div className="flex-1 min-h-0 p-4 overflow-y-auto space-y-3" ref={chatContainerRef}>
+          <div className="flex-1 min-h-0 p-3 sm:p-4 overflow-y-auto space-y-3" ref={chatContainerRef}>
             {messages.map((msg) => (
               <div
                 key={msg.id}
@@ -639,7 +656,7 @@ function Chatbot() {
           </div>
 
           {/* Quick replies — scrollable one-word questions */}
-          <div className="quick-scroll flex gap-2 overflow-x-auto px-4 py-2 bg-white border-t border-teal-100 flex-shrink-0">
+          <div className="quick-scroll flex gap-2 overflow-x-auto px-3 sm:px-4 py-2 bg-white border-t border-teal-100 flex-shrink-0">
             {quickReplies.map((reply) => (
               <button
                 key={reply.key}
@@ -655,7 +672,7 @@ function Chatbot() {
           </div>
 
           {/* Input */}
-          <div className="flex items-center p-4 bg-teal-50 border-t border-teal-200 gap-2">
+          <div className="flex items-center p-3 sm:p-4 bg-teal-50 border-t border-teal-200 gap-2">
             <form onSubmit={handleSubmit} className="flex-1">
               <div className="relative">
                 <input
@@ -692,7 +709,7 @@ function Chatbot() {
           </div>
 
           {/* CTA Button */}
-          <div className="p-4 bg-teal-50 border-t border-teal-200">
+          <div className="p-3 sm:p-4 bg-teal-50 border-t border-teal-200">
             <Button
               size="lg"
               className="w-full bg-teal-600 text-white hover:bg-teal-700"
